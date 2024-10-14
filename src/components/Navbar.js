@@ -7,12 +7,12 @@ function Navbar({isPortuguese, isDarkTheme, setIsPortuguese, setIsDarkTheme}) {
     setIsDarkTheme(!isDarkTheme)
   }
   return (
-    <div className="p-8 flex justify-between">
-      <h1 className="text-red-500">{"<Mauro />"}</h1>
+    <div className="text-3xl p-12 flex justify-between">
+      <h1 className="font-extrabold bg-gradient-to-r from-[#FF0000] to-pink-900 bg-clip-text text-transparent">{"<Mauro />"}</h1>
       <ul className="flex items-center">
         <li className="mr-4">
-          <button onClick={toggleLanguage} className={`flex items-center transition-colors duration-300 ${isPortuguese ? 'text-red-500' : 'text-gray-700'}`}>
-            {isPortuguese ? '🇧🇷' : '🇺🇸'}
+          <button onClick={toggleLanguage} className={`flex items-center transition-colors duration-300 ${isPortuguese ? 'text-red-500' : 'text-gray-500'}`}>
+            {isPortuguese ? 'br' : 'en'}
           </button>
         </li>
         <li>

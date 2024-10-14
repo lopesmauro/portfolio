@@ -7,16 +7,18 @@ function Layout() {
   const [isDarkTheme, setIsDarkTheme] = useState(true)
 
   return (
-    <div className={`min-h-screen ${isDarkTheme ? 'bg-gray-900 text-white' : 'bg-white text-black'} transition-colors duration-300`}>
+    <div className={`relative overflow-x-hidden min-h-screen ${isDarkTheme ? 'bg-stone-900 text-white' : 'bg-white text-black'} transition-colors duration-300`}>
       <Navbar
         isPortuguese={isPortuguese}
         setIsPortuguese={setIsPortuguese}
         setIsDarkTheme={setIsDarkTheme}
         isDarkTheme={isDarkTheme}
+      />   
+      <Hero 
+        isDarkTheme={isDarkTheme}
       />
-      <Hero />
     </div>
   )
 }
 
-export default Layout
+export default Layout   
