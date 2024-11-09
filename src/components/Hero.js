@@ -1,8 +1,4 @@
-import { FileCode2 } from 'lucide-react';
-import { CodeXml } from 'lucide-react';
-
-
-function Hero({isDarkTheme}) {
+function Hero({ isDarkTheme }) {
   return (
     <div className="p-12 w-full flex justify-between">
       <div className="flex flex-col font-bold justify-center">
@@ -13,21 +9,31 @@ function Hero({isDarkTheme}) {
           width: "50%"
         }}>
           Solicitar serviço
-        </button>    
+        </button>
       </div>
-      <div>
-          <CodeXml className={isDarkTheme ? 'text-stone-900' : 'text-white'}  style={{
-           position: 'absolute',
-           top: '13%',
-           right: '-5%',
-           width: '35rem',
-           height: '32rem',
-           filter: 'drop-shadow(0 0 0.3rem rgba(255, 0, 0, 2))', // Simula uma borda
-        }}/>
+
+      <div
+        style={{
+          position: 'absolute',
+          top: '-5%',
+          right: '-10%',
+          width: '50rem',
+          height: 'auto',
+          fontSize: '28rem',
+          fontWeight: 'bold',
+          zIndex: '-1',
+          WebkitTextStroke: '5px',
+          WebkitTextStrokeColor: 'rgba(255, 0, 0, 0.6)',
+          WebkitBackgroundClip: 'text',
+          WebkitTextFillColor: 'transparent',
+          maskImage: 'linear-gradient(to top, rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, 1) 50%)',
+          WebkitMaskImage: 'linear-gradient(to top, rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 1) 60%)',
+        }}
+      >
+        {'</>'}
       </div>
     </div>
   );
 }
 
 export default Hero;
-
