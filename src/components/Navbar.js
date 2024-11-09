@@ -1,3 +1,6 @@
+import Flag from 'react-flagkit'
+import { Sun, Moon } from 'lucide-react'
+
 
 function Navbar({isPortuguese, isDarkTheme, setIsPortuguese, setIsDarkTheme}) {
   const toggleLanguage = () => {
@@ -15,18 +18,18 @@ function Navbar({isPortuguese, isDarkTheme, setIsPortuguese, setIsDarkTheme}) {
       </h1>
       <ul className="flex items-center">
         <li className="mr-4">
-          <button onClick={toggleLanguage} className={`z-40 font-extrabold flex items-center transition-colors duration-300 ${isPortuguese ? 'text-red-500' : 'text-gray-500'}`}>
-            {isPortuguese ? 'br' : 'en'}
+          <button onClick={toggleLanguage} className={`z-40 font-extrabold flex items-center ${isPortuguese ? 'text-red-500' : 'text-gray-500'}`}>
+            {isPortuguese ? <Flag country="BR" /> : <Flag country="US"/>}
           </button>
         </li>
         <li>
-          <button onClick={toggleTheme} className={`flex items-center transition-colors duration-300 ${isDarkTheme ? 'text-red-500' : 'text-gray-700'}`}>
-            {isDarkTheme ? '🌙' : '☀️'}
+          <button onClick={toggleTheme} className={`flex items-center ${isDarkTheme ? 'text-red-500' : 'text-gray-700'}`}>
+            {isDarkTheme ? <Moon/> : <Sun/>}
           </button>
         </li>
       </ul>
     </div>
-  );
+  )
 }
 
 export default Navbar

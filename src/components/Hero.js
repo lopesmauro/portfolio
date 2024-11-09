@@ -4,7 +4,7 @@ function Hero({ isDarkTheme }) {
       <div className="flex flex-col font-bold justify-center">
         <h1 className='text-6xl'>Meet your next dev</h1>
         <h1 className="text-6xl font-extrabold bg-gradient-to-r from-[#FF0000] to-pink-900 bg-clip-text text-transparent">Fullstack.</h1>
-        <p className="font-bold text-xl text-gray-500 mt-2">Transformando ideias em código.</p>
+        <p className="font-bold text-xl text-gray-500 mt-2">Turning up ideas into code.</p>
         <button className="mt-4 py-3 bg-gradient-to-r from-[#FF0000] to-pink-900 text-white font-semibold rounded-lg shadow-lg transition duration-300 transform origin-left hover:scale-x-105" style={{
           width: "50%"
         }}>

@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import Hero from './Hero'
 import Navbar from './Navbar'
+import Services from './Services'
 
 function Layout() {
   const [isPortuguese, setIsPortuguese] = useState(true)
@@ -17,6 +18,7 @@ function Layout() {
       <Hero
         isDarkTheme={isDarkTheme}
       />
+      <Services/>
     </div>
   )
 }
