@@ -1,11 +1,13 @@
 function Hero({ isDarkTheme }) {
   return (
-    <div className="p-12 w-full flex justify-between">
+    <div className="p-14 w-full flex justify-between">
       <div className="flex flex-col font-bold justify-center">
         <h1 className='text-6xl'>Meet your next dev</h1>
         <h1 className="text-6xl font-extrabold bg-gradient-to-r from-[#FF0000] to-pink-900 bg-clip-text text-transparent">Fullstack.</h1>
-        <p className="font-bold text-xl text-gray-500 mt-2">Turning up ideas into code.</p>
-        <button className="mt-4 py-3 bg-gradient-to-r from-[#FF0000] to-pink-900 text-white font-semibold rounded-lg shadow-lg transition duration-300 transform origin-left hover:scale-x-105" style={{
+        <p className="font-bold text-xl text-gray-500 mt-2">Designing seamless digital journeys.</p>
+        <p className="font-bold text-xl text-gray-500">Bringing creativity, precision, and expertise,</p>
+        <p className="font-bold text-xl text-gray-500">transforming concepts into robust.</p>
+        <button className="mt-4 py-4 bg-gradient-to-r from-[#FF0000] to-pink-900 text-white font-semibold rounded-lg shadow-lg transition duration-300 transform origin-left hover:scale-x-105" style={{
           width: "50%"
         }}>
           Solicitar serviço
@@ -15,7 +17,7 @@ function Hero({ isDarkTheme }) {
       <div
         style={{
           position: 'absolute',
-          top: '-5%',
+          top: '-3%',
           right: '-10%',
           width: '50rem',
           height: 'auto',

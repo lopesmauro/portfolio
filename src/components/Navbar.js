@@ -10,7 +10,7 @@ function Navbar({isPortuguese, isDarkTheme, setIsPortuguese, setIsDarkTheme}) {
     setIsDarkTheme(!isDarkTheme)
   }
   return (
-    <div className="text-4xl p-12 flex justify-between">
+    <div className="text-4xl p-14 flex justify-between">
       <h1 className="font-extrabold bg-gradient-to-r from-[#FF0000] to-pink-900 bg-clip-text text-transparent">
         <span className="text-gray-500">{"<"}</span>
         <span>{"Mauro "}</span>

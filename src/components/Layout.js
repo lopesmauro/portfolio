@@ -2,6 +2,7 @@ import { useState } from 'react'
 import Hero from './Hero'
 import Navbar from './Navbar'
 import Services from './Services'
+import Footer from './Footer'
 
 function Layout() {
   const [isPortuguese, setIsPortuguese] = useState(true)
@@ -19,6 +20,7 @@ function Layout() {
         isDarkTheme={isDarkTheme}
       />
       <Services/>
+      <Footer/>
     </div>
   )
 }

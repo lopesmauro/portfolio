@@ -6,7 +6,7 @@ const Services = () => {
     WebkitMaskImage: 'linear-gradient(to top left, rgba(0, 0, 0, 0) 5%, rgba(0, 0, 0, 1) 60%)',
   }
   return (
-    <div className="w-full mt-32 p-12">
+    <div className="w-full mt-16 p-12">
       <div className="font-bold flex justify-center text-4xl mb-16">
         <h1>
           Services
