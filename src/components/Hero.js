@@ -1,41 +1,50 @@
-function Hero({ isDarkTheme }) {
-  return (
-    <div className="p-14 w-full flex justify-between">
-      <div className="flex flex-col font-bold justify-center">
-        <h1 className='text-6xl'>Meet your next dev</h1>
-        <h1 className="text-6xl font-extrabold bg-gradient-to-r from-[#FF0000] to-pink-900 bg-clip-text text-transparent">Fullstack.</h1>
-        <p className="font-bold text-xl text-gray-500 mt-2">Designing seamless digital journeys.</p>
-        <p className="font-bold text-xl text-gray-500">Bringing creativity, precision, and expertise,</p>
-        <p className="font-bold text-xl text-gray-500">transforming concepts into robust.</p>
-        <button className="mt-4 py-4 bg-gradient-to-r from-[#FF0000] to-pink-900 text-white font-semibold rounded-lg shadow-lg transition duration-300 transform origin-left hover:scale-x-105" style={{
-          width: "50%"
-        }}>
-          Solicitar serviço
-        </button>
-      </div>
+import React from 'react';
+import { Rocket, Sparkles } from 'lucide-react';
 
-      <div
-        style={{
-          position: 'absolute',
-          top: '-3%',
-          right: '-10%',
-          width: '50rem',
-          height: 'auto',
-          fontSize: '28rem',
-          fontWeight: 'bold',
-          zIndex: '-1',
-          WebkitTextStroke: '5px',
-          WebkitTextStrokeColor: 'rgba(255, 0, 0, 0.6)',
-          WebkitBackgroundClip: 'text',
-          WebkitTextFillColor: 'transparent',
-          maskImage: 'linear-gradient(to top, rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, 1) 50%)',
-          WebkitMaskImage: 'linear-gradient(to top, rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 1) 60%)',
-        }}
-      >
-        {'</>'}
+function Hero({ isDarkTheme, isPortuguese }) {
+  return (
+    <div className="w-full lg:px-56 relative overflow-hidden py-72">
+      <div className="space-y-8">
+        <div className="space-y-4">
+          <h1 className="text-5xl font-bold leading-tight lg:text-6xl">
+            {isPortuguese ? (
+              <>
+                Transformando ideias em
+                <span className="block mt-2 bg-gradient-to-r from-[#FF0000] to-pink-900 bg-clip-text text-transparent">
+                  experiências digitais
+                  <span className="animate-pulse">_</span>
+                </span>
+              </>
+            ) : (
+              <>
+                Transforming ideas into
+                <span className="block mt-2 bg-gradient-to-r from-[#FF0000] to-pink-900 bg-clip-text text-transparent">
+                  digital experiences
+                  <span className="animate-pulse">_</span>
+                </span>
+              </>
+            )}
+          </h1>
+          <p className="text-xl text-gray-400">
+            {isPortuguese
+              ? 'Criando soluções inovadoras com código limpo e design intuitivo'
+              : 'Creating innovative solutions with clean code and intuitive design'}
+          </p>
+        </div>
+
+        <div className="flex flex-col sm:flex-row gap-4">
+          <button className="px-8 py-4 bg-gradient-to-r from-[#FF0000] to-pink-900 text-white rounded-lg font-semibold flex items-center justify-center gap-2 transform transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-red-600/20">
+            <Rocket className="w-5 h-5" />
+            {isPortuguese ? 'Iniciar Projeto' : 'Start Project'}
+          </button>
+          <button className="px-8 py-4 rounded-lg font-semibold flex items-center justify-center gap-2 border-2 border-white/10 hover:border-red-600 transition-colors duration-300">
+            <Sparkles className="w-5 h-5" />
+            {isPortuguese ? 'Ver Portfólio' : 'View Portfolio'}
+          </button>
+        </div>
       </div>
     </div>
-  );
+  )
 }
 
 export default Hero;

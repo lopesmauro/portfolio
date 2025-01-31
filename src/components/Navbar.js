@@ -1,35 +1,42 @@
-import Flag from 'react-flagkit'
-import { Sun, Moon } from 'lucide-react'
+import React from 'react';
+import { Sun, Moon, Code, Globe } from 'lucide-react';
 
-
-function Navbar({isPortuguese, isDarkTheme, setIsPortuguese, setIsDarkTheme}) {
-  const toggleLanguage = () => {
-    setIsPortuguese(!isPortuguese)
-  }
-  const toggleTheme = () => {
-    setIsDarkTheme(!isDarkTheme)
-  }
+function Navbar({ isPortuguese, isDarkTheme, setIsPortuguese, setIsDarkTheme }) {
   return (
-    <div className="text-4xl p-14 flex justify-between">
-      <h1 className="font-extrabold bg-gradient-to-r from-[#FF0000] to-pink-900 bg-clip-text text-transparent">
-        <span className="text-gray-500">{"<"}</span>
-        <span>{"Mauro "}</span>
-        <span className="text-gray-500">{"/>"}</span>
-      </h1>
-      <ul className="flex items-center">
-        <li className="mr-4">
-          <button onClick={toggleLanguage} className={`z-40 font-extrabold flex items-center ${isPortuguese ? 'text-red-500' : 'text-gray-500'}`}>
-            {isPortuguese ? <Flag country="BR" /> : <Flag country="US"/>}
-          </button>
-        </li>
-        <li>
-          <button onClick={toggleTheme} className={`flex items-center ${isDarkTheme ? 'text-red-500' : 'text-gray-700'}`}>
-            {isDarkTheme ? <Moon/> : <Sun/>}
-          </button>
-        </li>
-      </ul>
-    </div>
-  )
+    <nav className="fixed w-full z-50 bg-secondary py-6 backdrop-blur-lg border-b border-white/10">
+      <div className="lg:px-56">
+        <div className="flex justify-between h-16 items-center">
+          <div className="flex items-center gap-2 group">
+            <Code className="w-8 h-8 text-red-600 transform group-hover:rotate-12 transition-transform duration-300" />
+            <span className="text-2xl font-bold bg-gradient-to-r from-[#FF0000] to-pink-900 bg-clip-text text-transparent">
+              Mauro.dev
+              <span className="animate-pulse">_</span>
+            </span>
+          </div>
+
+          <div className="flex items-center gap-4">
+            <button
+              onClick={() => setIsPortuguese(!isPortuguese)}
+              className="p-2 rounded-lg transition-all duration-300 bg-white/5 hover:bg-red-600/20 hover:text-red-600"
+            >
+              <Globe className={`w-5 h-5 ${isPortuguese ? 'text-red-600' : ''}`} />
+            </button>
+
+            <button
+              onClick={() => setIsDarkTheme(!isDarkTheme)}
+              className="p-2 rounded-lg transition-all duration-300 bg-white/5 hover:bg-red-600/20 hover:text-red-600"
+            >
+              {isDarkTheme ? (
+                <Moon className="w-5 h-5 text-red-600" />
+              ) : (
+                <Sun className="w-5 h-5" />
+              )}
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+  );
 }
 
-export default Navbar
+export default Navbar;

@@ -1,4 +1,4 @@
-import { Server, Database, FileCode2 } from 'lucide-react'
+import { Server, Database, FileCode2, Terminal } from 'lucide-react'
 
 const Services = () => {
   const shadowOnIcons = {
@@ -6,16 +6,17 @@ const Services = () => {
     WebkitMaskImage: 'linear-gradient(to top left, rgba(0, 0, 0, 0) 5%, rgba(0, 0, 0, 1) 60%)',
   }
   return (
-    <div className="w-full mt-16 p-12">
+    <div className="w-full bg-secondary py-20 px-12">
       <div className="font-bold flex justify-center text-4xl mb-16">
+        <Terminal className="mr-2 text-red-600" />
         <h1>
           Services
-          <span className="bg-gradient-to-r from-[#FF0000] to-pink-900 bg-clip-text text-transparent">.</span>
+          <span className="bg-gradient-to-r from-[#FF0000] to-pink-900 bg-clip-text text-transparent">_</span>
         </h1>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-        <div className="bg-stone-900 p-6 rounded-lg border-2 border-white border-opacity-10 hover:border-red-600 transition-all duration-700">
+      <div className="grid grid-cols-1 md:grid-cols-3 px-56 gap-8">
+        <div className="bg-primary p-6 rounded-lg border-2 border-white border-opacity-10 hover:border-red-600 transition-all duration-700">
           <div className='py-5'>
             <FileCode2 size={80} className="text-red-600" style={shadowOnIcons}/>
           </div>
@@ -23,7 +24,7 @@ const Services = () => {
           <p className="text-gray-600">Create beautiful and responsive user interfaces with modern frameworks like React, Vue, and Angular. I specialize in building interactive front-end experiences that delight users and enhance engagement.</p>
         </div>
 
-        <div className="bg-stone-900 p-6 rounded-lg border-2 border-white border-opacity-10 hover:border-red-600 transition-all duration-700">
+        <div className="bg-primary p-6 rounded-lg border-2 border-white border-opacity-10 hover:border-red-600 transition-all duration-700">
           <div className='py-5'>
             <Database size={80} className="text-red-600" style={shadowOnIcons}/>
           </div>
@@ -31,7 +32,7 @@ const Services = () => {
           <p className="text-gray-600">Develop robust and scalable back-end systems using technologies like Node.js, Python, and databases such as PostgreSQL and MongoDB. I build the server-side logic that powers your application and handles complex data processing.</p>
         </div>
 
-        <div className="bg-stone-900 p-6 rounded-lg border-2 border-white border-opacity-10 hover:border-red-600 transition-all duration-700">
+        <div className="bg-primary p-6 rounded-lg border-2 border-white border-opacity-10 hover:border-red-600 transition-all duration-700">
           <div className='py-5'>
             <Server size={80} className="text-red-600" style={shadowOnIcons}/>
           </div>
