@@ -53,8 +53,8 @@ const Experience = () => {
           {experiences.map((exp, index) => {
             return (
               <div key={index} className="relative pb-12 group">
-
                 <div className="ml-16 bg-primary p-8 rounded-2xl backdrop-blur-sm border-2 border-white border-opacity-10 hover:border-red-600 transform transition-all duration-500 group-hover:-translate-y-1 z-10">
+                 <div className="absolute inset-0 bg-gradient-to-tr from-red-600/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                   <div className="flex flex-wrap justify-between items-start gap-4 mb-6">
                     <div>
                       <h3 className="text-2xl font-bold mb-2">{exp.title}</h3>

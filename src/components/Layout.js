@@ -5,6 +5,7 @@ import Services from './Services'
 import Footer from './Footer'
 import Projects from './Projects'
 import Experience from './Experience'
+import Contact from './Contact'
 
 function Layout() {
   const [isPortuguese, setIsPortuguese] = useState(true)
@@ -24,6 +25,7 @@ function Layout() {
       <Services/>
       <Projects/>
       <Experience/>
+      <Contact/>
       <Footer/>
     </div>
   )

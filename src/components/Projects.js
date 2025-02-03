@@ -17,18 +17,25 @@ const projects= [
     github: "https://github.com/yourusername/devops-dashboard",
     image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=800",
   },
+  {
+    title: "DevOps Dashboard",
+    description: "Real-time monitoring dashboard for DevOps metrics",
+    tech: ["Vue.js", "Docker", "Kubernetes", "Prometheus"],
+    github: "https://github.com/yourusername/devops-dashboard",
+    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=800",
+  },
+  {
+    title: "DevOps Dashboard",
+    description: "Real-time monitoring dashboard for DevOps metrics",
+    tech: ["Vue.js", "Docker", "Kubernetes", "Prometheus"],
+    github: "https://github.com/yourusername/devops-dashboard",
+    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=800",
+  },
 ]
 
 const Projects = () => {
   return (
     <div className="w-full px-56 py-20 relative overflow-hidden">
-      <div className="absolute inset-0 opacity-5">
-        <div className="h-full w-full" style={{
-          backgroundImage: 'repeating-linear-gradient(135deg, rgba(255, 0, 0, 0.15), rgba(255, 0, 0, 0.15) 1px, transparent 1px, transparent 6px)',
-          backgroundSize: '8px 8px',
-        }} />
-      </div>
-
       <div className="max-w-7xl mx-auto px-6 relative z-10">
         <div className="font-bold flex justify-center text-4xl mb-16">
           <Terminal className="mr-2 text-red-600" />
@@ -84,7 +91,7 @@ const Projects = () => {
                 <p className="'text-gray-600">
                   {project.description}
                 </p>
-                <div className="flex flex-wrap gap-2">
+                <div className="flex flex-wrap gap-2 mt-4">
                   {project.tech.map((tech, techIndex) => (
                     <span
                       key={techIndex}
