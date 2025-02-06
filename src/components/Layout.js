@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import Hero from './Hero'
 import Navbar from './Navbar'
 import Services from './Services'
@@ -8,20 +7,10 @@ import Experience from './Experience'
 import Contact from './Contact'
 
 function Layout() {
-  const [isPortuguese, setIsPortuguese] = useState(true)
-  const [isDarkTheme, setIsDarkTheme] = useState(true)
-
   return (
-    <div className={`z-10 relative overflow-x-hidden min-h-screen ${isDarkTheme ? 'bg-primary text-white' : 'bg-white text-black'} transition-colors duration-300`}>
-      <Navbar
-        isPortuguese={isPortuguese}
-        setIsPortuguese={setIsPortuguese}
-        setIsDarkTheme={setIsDarkTheme}
-        isDarkTheme={isDarkTheme}
-      />
-      <Hero
-        isDarkTheme={isDarkTheme}
-      />
+    <div className={`z-10 relative overflow-x-hidden min-h-screen bg-primary text-white transition-colors duration-300`}>
+      <Navbar/>
+      <Hero/>
       <Services/>
       <Projects/>
       <Experience/>
