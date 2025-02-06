@@ -63,11 +63,11 @@
 
 @media (max-width: 480px) {
     .contact-title h1 {
-        font-size: 2.5rem;
+        font-size: 2.3rem;
     }
 
     .contact-title p {
-        font-size: 0.9rem;
+        font-size: 0.7rem;
     }
 
     .contact-cards {
@@ -75,7 +75,7 @@
     }
 
     .github.icon, .linkedin.icon, .email.icon {
-        font-size: 30px;
+        font-size: 28px;
     }
 
     .contact-title {
