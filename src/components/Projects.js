@@ -1,7 +1,7 @@
 import React from 'react';
 import { ExternalLink, Github, Terminal } from 'lucide-react'
 
-const projects= [
+const projects = [
   {
     title: "Terminal Blog",
     description: "A modern blog platform with a unique terminal-inspired interface",
@@ -17,25 +17,12 @@ const projects= [
     github: "https://github.com/yourusername/devops-dashboard",
     image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=800",
   },
-  {
-    title: "DevOps Dashboard",
-    description: "Real-time monitoring dashboard for DevOps metrics",
-    tech: ["Vue.js", "Docker", "Kubernetes", "Prometheus"],
-    github: "https://github.com/yourusername/devops-dashboard",
-    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=800",
-  },
-  {
-    title: "DevOps Dashboard",
-    description: "Real-time monitoring dashboard for DevOps metrics",
-    tech: ["Vue.js", "Docker", "Kubernetes", "Prometheus"],
-    github: "https://github.com/yourusername/devops-dashboard",
-    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=800",
-  },
+  // Adicione os outros projetos aqui...
 ]
 
 const Projects = () => {
   return (
-    <div className="w-full px-56 py-20 relative overflow-hidden">
+    <div className="w-full px-4 lg:px-12 py-20 relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-6 relative z-10">
         <div className="font-bold flex justify-center text-4xl mb-16">
           <Terminal className="mr-2 text-red-600" />
@@ -45,7 +32,7 @@ const Projects = () => {
           </h1>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-12">
           {projects.map((project, index) => (
             <div
               key={index}
@@ -62,7 +49,7 @@ const Projects = () => {
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent" />
                 <div className="absolute bottom-0 left-0 right-0 p-6">
                   <div className="flex justify-between items-start">
-                    <h3 className="text-2xl font-bold text-white mb-2">{project.title}</h3>
+                    <h3 className="text-xl sm:text-2xl font-bold text-white mb-2">{project.title}</h3>
                     <div className="flex gap-3">
                       <a
                         href={project.github}
@@ -88,7 +75,7 @@ const Projects = () => {
               </div>
 
               <div className="p-6">
-                <p className="'text-gray-600">
+                <p className="text-gray-600 text-sm sm:text-base">
                   {project.description}
                 </p>
                 <div className="flex flex-wrap gap-2 mt-4">
@@ -110,4 +97,4 @@ const Projects = () => {
   )
 }
 
-export default Projects
+export default Projects;

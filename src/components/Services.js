@@ -25,7 +25,7 @@ const Services = () => {
   ]
 
   return (
-    <div className="w-full bg-secondary py-20 px-12">
+    <div className="w-full bg-secondary py-20 px-4 md:px-12">
       <div className="font-bold flex justify-center text-4xl mb-16">
         <Terminal className="mr-2 text-red-600" />
         <h1>
@@ -34,15 +34,15 @@ const Services = () => {
         </h1>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 px-56 gap-8">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
         {services.map((service, index) => (
           <div key={index} className="group relative bg-primary p-6 rounded-lg border-2 border-white border-opacity-10 hover:border-red-600 transition-all duration-700">
             <div className='absolute inset-0 bg-gradient-to-tr from-red-600/15 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500'/>
             <div className='py-5'>
               {service.icon}
             </div>
-            <h2 className="text-2xl font-bold mb-2">{service.title}</h2>
-            <p className="text-gray-600">{service.description}</p>
+            <h2 className="text-xl sm:text-2xl font-bold mb-2">{service.title}</h2>
+            <p className="text-gray-600 text-sm sm:text-base">{service.description}</p>
           </div>
         ))}
       </div>
