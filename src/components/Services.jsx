@@ -18,7 +18,7 @@ const services = [
   },
   {
     title: 'DevOps',
-    description: 'Garanta que seu aplicativo funcione sem problemas e escale com facilidade através da integração e entrega contínuas (CI/CD), conteinerização com Docker e gerenciamento de infraestrutura com Kubernetes. Ajudo a automatizar seus fluxos de trabalho e otimizar as implantações.',
+    description: 'Garanta que seu aplicativo funcione sem problemas e escale com facilidade através da integração e entrega contínuas (CI/CD), e conteinerização com Docker. Ajudo a automatizar seus fluxos de trabalho e otimizar as implantações.',
     icon: <Server size={80} className="text-red-600" style={shadowOnIcons} />,
   },
 ]
@@ -30,7 +30,7 @@ const Services = () => {
       <div className="font-bold flex justify-center text-4xl mb-16">
         <Terminal className="mr-2 text-red-600" />
         <h1>
-          Services
+          Serviços
           <span className="bg-gradient-to-r from-[#FF0000] to-pink-900 bg-clip-text text-transparent">_</span>
         </h1>
       </div>

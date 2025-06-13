@@ -1,4 +1,3 @@
-import React from 'react'
 import logo from '../assets/img/logo.png'
 
 const Footer = () => {
@@ -13,7 +12,7 @@ const Footer = () => {
         <div className="flex gap-5 justify-center items-center md:text-left mb-4 md:mb-0">
           <img src={logo} alt="logo" className="w-14 h-14" />
           <div>
-            <p> Desenvolvido por <br/> Mauro Felipe © <span className='text-red-600'>{new Date().getFullYear()}</span></p>
+            <p className='font-poppins'> Desenvolvido por <br/> Mauro Felipe © <span className='text-red-600'>{new Date().getFullYear()}</span></p>
           </div>
       </div>
     </footer>

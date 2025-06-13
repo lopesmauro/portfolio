@@ -49,7 +49,7 @@ const Experience = () => {
         <div className="flex items-center justify-center gap-3 text-4xl font-bold mb-20">
           <Terminal className="text-red-600" />
           <h1>
-            Experience
+            Experiência
             <span className="bg-gradient-to-r from-[#FF0000] to-pink-900 bg-clip-text text-transparent">_</span>
           </h1>
         </div>

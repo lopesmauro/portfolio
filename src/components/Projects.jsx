@@ -26,7 +26,7 @@ const Projects = () => {
         <div className="font-bold flex justify-center text-4xl mb-16">
           <Terminal className="mr-2 text-red-600" />
           <h1>
-            Projects
+            Projetos
             <span className="bg-gradient-to-r from-[#FF0000] to-pink-900 bg-clip-text text-transparent">_</span>
           </h1>
         </div>
