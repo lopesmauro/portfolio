@@ -14,10 +14,6 @@
     "@react-three/fiber": "^9.1.2",
     "@tailwindcss/vite": "^4.1.10",
     "clsx": "^2.1.1",
-<<<<<<< HEAD
-=======
-    "gsap": "^3.13.0",
->>>>>>> a486b05 (feat: add gsap to application and organize files about canvas element.)
     "lucide-react": "^0.514.0",
     "motion": "^12.17.0",
     "react": "^19.1.0",
