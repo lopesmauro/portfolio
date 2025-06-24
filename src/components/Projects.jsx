@@ -7,15 +7,22 @@ const projects = [
     description: "Minha primeira aplicação em 2022, um aplicativo de agenda telefônica construído com o padrão MVC. Permite aos usuários gerenciar contatos com operações CRUD, através de rotas RESTful.",
     tech: ["Node.js", "Express", "Mustache", "MongoDB"],
     github: "https://github.com/lopesmauro/agenda",
-    live: "https://terminal-blog.demo", // Mantenho este link, mas é um demo.
+    live: "https://terminal-blog.demo", 
     image: "./agenda.png",
   },
   {
     title: "MyLeague",
     description: "MyLeague é uma plataforma desenvolvida para simplificar o gerenciamento de torneios de futebol, permitindo aos usuários criar, organizar e acompanhar competições de forma eficiente.",
-    tech: ["Next.js", "Tailwind.css", "Node.js", "Fastify", "Prisma", "Docker"], // Corrigi a vírgula que faltava aqui.
+    tech: ["Next.js", "Tailwind.css", "Node.js", "Fastify", "Prisma", "Docker"], 
     github: "https://github.com/lopesmauro/myleague",
     image: "./myleague.png",
+  },
+  {
+    title: "Isso",
+    description: "'Isso' é uma Landing page de estudo de caso inspirada no banco Itaú feita em Next.js.",
+    tech: ["React", "Tailwind.css", "Node.js"], 
+    github: "https://github.com/lopesmauro/isso-landing-page",
+    image: "./isso.png",
   },
 ]
 
