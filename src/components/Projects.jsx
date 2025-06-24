@@ -24,6 +24,13 @@ const projects = [
     github: "https://github.com/lopesmauro/isso-landing-page",
     image: "./isso.png",
   },
+  {
+    title: "MF Donalds",
+    description: "Donalds é um aplicativo moderno e eficiente de pedidos de fast-food, construído com Next.js, React e Tailwind CSS. Utiliza Prisma para gerenciamento de banco de dados. Projetado para oferecer uma experiência fluida ao usuário, permitindo personalizar e acompanhar pedidos em tempo real.",
+    tech: ["Next.js", "React", "Tailwind CSS", "Prisma"], 
+    github: "https://github.com/seu-usuario/donalds", 
+    image: "./mf-donalds.png", 
+  }
 ]
 
 const Projects = () => {
