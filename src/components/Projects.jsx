@@ -18,7 +18,7 @@ const projects = [
     image: "./myleague.png",
   },
   {
-    title: "Isso",
+    title: "IssoBank",
     description: "'Isso' é uma Landing page de estudo de caso inspirada no banco Itaú feita em Next.js.",
     tech: ["React", "Tailwind.css", "Node.js"], 
     github: "https://github.com/lopesmauro/isso-landing-page",
