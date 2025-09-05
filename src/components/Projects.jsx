@@ -5,9 +5,9 @@ const projects = [
   {
     title: "Agenda",
     description: "Minha primeira aplicação em 2022, um aplicativo de agenda telefônica construído com o padrão MVC. Permite aos usuários gerenciar contatos com operações CRUD, através de rotas RESTful.",
-    tech: ["Node.js", "Express", "Mustache", "MongoDB"],
+    tech: ["Node.js", "Express", "Mustache", "MongoDB", "Bootstrap"],
     github: "https://github.com/lopesmauro/agenda",
-    live: "https://terminal-blog.demo", 
+    live: "https://github.com/lopesmauro/agenda", 
     image: "./agenda.png",
   },
   {
