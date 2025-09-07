@@ -16,11 +16,6 @@ const services = [
     description: 'Desenvolva sistemas de back-end robustos e escaláveis usando tecnologias como Node.js, Python e bancos de dados como PostgreSQL e MongoDB. Construo a lógica do lado do servidor que impulsiona seu aplicativo e lida com o processamento complexo de dados.',
     icon: <Database size={80} className="text-red-600" style={shadowOnIcons} />,
   },
-  {
-    title: 'DevOps',
-    description: 'Garanta que seu aplicativo funcione sem problemas e escale com facilidade através da integração e entrega contínuas (CI/CD), e conteinerização com Docker. Ajudo a automatizar seus fluxos de trabalho e otimizar as implantações.',
-    icon: <Server size={80} className="text-red-600" style={shadowOnIcons} />,
-  },
 ]
 
 
