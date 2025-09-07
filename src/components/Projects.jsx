@@ -11,7 +11,7 @@ const projects = [
   },
   {
     title: "IssoBank",
-    description: "IssoBank é uma Landing page de estudo de caso inspirada no banco Itaú feita em Next.js.",
+    description: "Estudo de Caso: Uma Landing Page moderna e sofisticada, inspirada no estilo do Banco Itaú — combinando a alta performance do Next.js com a versatilidade do TailwindCSS e a elegância dos componentes ShadcnUI para entregar uma experiência visual marcante e profissional.",
     tech: ["React", "Tailwind.css", "Node.js"], 
     github: "https://github.com/lopesmauro/isso-landing-page",
     image: "./isso.png",
