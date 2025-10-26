@@ -1,4 +1,5 @@
 "use client"
+
 import { Rocket, Sparkles } from "lucide-react"
 import { useRef, useLayoutEffect } from "react"
 import { CanvaComponent } from "./canva"
@@ -43,42 +44,38 @@ export default function Hero() {
         <CanvaComponent />
       </div>
 
-      <div className="relative container h-full flex flex-col justify-center items-center md:items-start px-4 md:px-6 z-10">
-        <div className="max-w-2xl space-y-4 text-center md:text-left">
-          <h1
-            ref={headingRef}
-            className="font-poppins text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl text-white"
-          >
-            Olá, me chamo{" "}
-            <span className="text-red-600 font-bold">Mauro</span>{" "}
-            &{" "}
-            <span className="text-red-600 font-bold">sou Desenvolvedor</span>
-          </h1>
-
-          <p ref={paragraphRef} className="text-xl text-gray-300">
-            Transformando ideias em experiências digitais incríveis. Especializado em design de UI/UX e desenvolvimento web.
-          </p>
-
-          <div
-            ref={buttonsRef}
-            className="flex flex-row items-center gap-4 mt-8 justify-center md:justify-start md:gap-6"
-          >
-
-
-            <button
-              className="cursor-pointer h-14 px-8 py-4 bg-gradient-to-r from-[#FF0000] to-pink-900 text-white rounded-lg font-semibold flex items-center justify-center gap-2 transition-shadow duration-300 hover:shadow-lg hover:shadow-red-600/20"
-
+      {/* Container centralizado igual Services */}
+      <div className="w-full px-4 lg:px-12 h-full relative z-10">
+        <div className="max-w-7xl mx-auto flex h-full items-center">
+          <div className="max-w-2xl flex flex-col justify-center space-y-4 text-left">
+            <h1
+              ref={headingRef}
+              className="font-poppins text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl text-white"
             >
-              <Rocket className="w-5 h-5" />
-              Iniciar Projeto
-            </button>
+              Olá, me chamo{" "}
+              <span className="text-red-600 font-bold">Mauro</span>{" "}
+              &{" "}
+              <span className="text-red-600 font-bold">sou Desenvolvedor</span>
+            </h1>
 
-            <button
-              className="cursor-pointer h-14 px-8 py-4 rounded-lg font-semibold flex items-center justify-center gap-2 border-2 border-white/10 hover:border-red-600 text-white transition-colors duration-300"
+            <p ref={paragraphRef} className="text-xl text-gray-300 mt-4">
+              Transformando ideias em experiências digitais incríveis. Especializado em design de UI/UX e desenvolvimento web.
+            </p>
+
+            <div
+              ref={buttonsRef}
+              className="flex flex-row items-center gap-4 mt-8 md:gap-6"
             >
-              <Sparkles className="w-5 h-5" />
-              Ver Portfólio
-            </button>
+              <button className="cursor-pointer h-14 px-8 py-4 bg-gradient-to-r from-[#FF0000] to-pink-900 text-white rounded-lg font-semibold flex items-center justify-center gap-2 transition-shadow duration-300 hover:shadow-lg hover:shadow-red-600/20">
+                <Rocket className="w-5 h-5" />
+                Iniciar Projeto
+              </button>
+
+              <button className="cursor-pointer h-14 px-8 py-4 rounded-lg font-semibold flex items-center justify-center gap-2 border-2 border-white/10 hover:border-red-600 text-white transition-colors duration-300">
+                <Sparkles className="w-5 h-5" />
+                Ver Portfólio
+              </button>
+            </div>
           </div>
         </div>
       </div>

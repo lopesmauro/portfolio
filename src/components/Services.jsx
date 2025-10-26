@@ -8,39 +8,49 @@ const shadowOnIcons = {
 const services = [
   {
     title: 'Front-end',
-    description: 'Crie interfaces de usuário bonitas e responsivas com frameworks modernos como React, Vue e Angular. Sou especialista em construir experiências interativas de front-end que encantam os usuários e aumentam o engajamento.',
+    description:
+      'Crie interfaces de usuário bonitas e responsivas com frameworks modernos como React, Vue e Angular. Sou especialista em construir experiências interativas de front-end que encantam os usuários e aumentam o engajamento.',
     icon: <FileCode2 size={80} className="text-red-600" style={shadowOnIcons} />,
   },
   {
     title: 'Back-end',
-    description: 'Desenvolva sistemas de back-end robustos e escaláveis usando tecnologias como Node.js, Python e bancos de dados como PostgreSQL e MongoDB. Construo a lógica do lado do servidor que impulsiona seu aplicativo e lida com o processamento complexo de dados.',
+    description:
+      'Desenvolva sistemas de back-end robustos e escaláveis usando tecnologias como Node.js, Python e bancos de dados como PostgreSQL e MongoDB. Construo a lógica do lado do servidor que impulsiona seu aplicativo e lida com o processamento complexo de dados.',
     icon: <Database size={80} className="text-red-600" style={shadowOnIcons} />,
+  },
+  {
+    title: 'DevOps',
+    description:
+      'Integro infraestrutura, automação e deploy contínuo para garantir que seus sistemas sejam confiáveis, escaláveis e fáceis de manter, usando ferramentas modernas como Docker, Kubernetes e CI/CD.',
+    icon: <Server size={80} className="text-red-600" style={shadowOnIcons} />,
   },
 ]
 
-
 const Services = () => {
   return (
-    <div className="w-full bg-secondary py-20 px-4 md:px-12">
-      <div className="font-bold flex justify-center text-4xl mb-16">
-        <Terminal className="mr-2 text-red-600" />
-        <h1>
-          Serviços
-          <span className="bg-gradient-to-r from-[#FF0000] to-pink-900 bg-clip-text text-transparent">_</span>
-        </h1>
-      </div>
+    <div className="w-full bg-secondary py-20 px-4 lg:px-12 relative overflow-hidden">
+      <div className="max-w-7xl mx-auto px-6 relative z-10">
+        <div className="font-bold flex justify-center text-4xl mb-16">
+          <Terminal className="mr-2 text-red-600" />
+          <h1>
+            Serviços
+            <span className="bg-gradient-to-r from-[#FF0000] to-pink-900 bg-clip-text text-transparent">_</span>
+          </h1>
+        </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
-        {services.map((service, index) => (
-          <div key={index} className="group relative bg-primary p-6 rounded-lg border-2 border-neutral-900  hover:border-red-600 transition-all duration-700">
-            <div className='absolute inset-0 bg-gradient-to-tr from-red-600/15 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500'/>
-            <div className='py-5'>
-              {service.icon}
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+          {services.map((service, index) => (
+            <div
+              key={index}
+              className="group relative bg-primary p-6 rounded-lg border-2 border-neutral-900 hover:border-red-600 transition-all duration-700"
+            >
+              <div className="absolute inset-0 bg-gradient-to-tr from-red-600/15 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+              <div className="py-5">{service.icon}</div>
+              <h2 className="text-xl sm:text-2xl font-bold mb-2">{service.title}</h2>
+              <p className="text-gray-600 text-sm sm:text-base">{service.description}</p>
             </div>
-            <h2 className="text-xl sm:text-2xl font-bold mb-2">{service.title}</h2>
-            <p className="text-gray-600 text-sm sm:text-base">{service.description}</p>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </div>
   )

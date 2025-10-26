@@ -3,13 +3,6 @@ import { ExternalLink, Github, Terminal } from 'lucide-react'
 
 const projects = [
   {
-    title: "MyLeague",
-    description: "MyLeague é uma plataforma desenvolvida para simplificar o gerenciamento de torneios de futebol, permitindo aos usuários criar, organizar e acompanhar competições de forma eficiente.",
-    tech: ["Next.js", "Tailwind.css", "Node.js", "Fastify", "Prisma", "Docker"], 
-    github: "https://github.com/lopesmauro/myleague",
-    image: "./myleague.png",
-  },
-  {
     title: "IssoBank",
     description: "Estudo de Caso: Uma Landing Page moderna e sofisticada, inspirada no estilo do Banco Itaú — combinando a alta performance do Next.js com a versatilidade do TailwindCSS e a elegância dos componentes ShadcnUI para entregar uma experiência visual marcante e profissional.",
     tech: ["React", "Tailwind.css", "Node.js"], 
@@ -23,18 +16,29 @@ const projects = [
     github: "https://github.com/seu-usuario/donalds", 
     image: "./mf-donalds.jpg", 
   },
-  
-  {
-    title: "Agenda",
-    description: "Minha primeira aplicação em 2022, um aplicativo de agenda telefônica construído com o padrão MVC. Permite aos usuários gerenciar contatos com operações CRUD, através de rotas RESTful.",
-    tech: ["Node.js", "Express", "Mustache", "MongoDB", "Bootstrap"],
-    github: "https://github.com/lopesmauro/agenda",
-    live: "https://github.com/lopesmauro/agenda", 
-    image: "./agenda.png",
-  },
-  
   {
     title: "Trallha",
+    description: "Uma aplicação de gerenciamento de tarefas no estilo Trello, construída com React e TypeScript, utilizando apenas conceitos fundamentais. Este projeto demonstra uma arquitetura limpa e escalável sem depender de bibliotecas externas de gerenciamento de estado, ideal para aprender e aplicar padrões fundamentais do React.",
+    tech: ["React", "CSS"],
+    github: "https://github.com/lopesmauro/trallha",
+    image: "./trallha.png",
+  },
+  {
+    title: "User Platform",
+    description: "Uma aplicação de gerenciamento de tarefas no estilo Trello, construída com React e TypeScript, utilizando apenas conceitos fundamentais. Este projeto demonstra uma arquitetura limpa e escalável sem depender de bibliotecas externas de gerenciamento de estado, ideal para aprender e aplicar padrões fundamentais do React.",
+    tech: ["React", "CSS"],
+    github: "https://github.com/lopesmauro/trallha",
+    image: "./trallha.png",
+  },
+  {
+    title: "PayCoffee",
+    description: "Uma aplicação de gerenciamento de tarefas no estilo Trello, construída com React e TypeScript, utilizando apenas conceitos fundamentais. Este projeto demonstra uma arquitetura limpa e escalável sem depender de bibliotecas externas de gerenciamento de estado, ideal para aprender e aplicar padrões fundamentais do React.",
+    tech: ["React", "CSS"],
+    github: "https://github.com/lopesmauro/trallha",
+    image: "./trallha.png",
+  },
+  {
+    title: "PizzaShop",
     description: "Uma aplicação de gerenciamento de tarefas no estilo Trello, construída com React e TypeScript, utilizando apenas conceitos fundamentais. Este projeto demonstra uma arquitetura limpa e escalável sem depender de bibliotecas externas de gerenciamento de estado, ideal para aprender e aplicar padrões fundamentais do React.",
     tech: ["React", "CSS"],
     github: "https://github.com/lopesmauro/trallha",
