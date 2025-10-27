@@ -28,7 +28,7 @@ const services = [
 
 const Services = () => {
   return (
-    <div className="w-full bg-black py-20 px-4 lg:px-12 relative overflow-hidden">
+    <div className="w-full bg-black pb-20 px-4 lg:px-12 relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-6 relative z-10">
         {/* Título da seção */}
         <div className="font-bold flex justify-center items-center text-4xl mb-16 tracking-tight">
