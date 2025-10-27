@@ -7,7 +7,7 @@ const Footer = () => {
   }
 
   return (
-    <footer className="text-white py-10 flex justify-center items-center flex-col">
+    <footer className="bg-black text-white py-10 flex justify-center items-center flex-col">
       <div className='border-t border-neutral-900 w-full mb-12' style={shadowOnIcons}/>
         <div className="flex gap-5 justify-center items-center md:text-left mb-4 md:mb-0">
           <img src={logo} alt="logo" className="w-14 h-14" />

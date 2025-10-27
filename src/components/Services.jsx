@@ -28,26 +28,30 @@ const services = [
 
 const Services = () => {
   return (
-    <div className="w-full bg-secondary py-20 px-4 lg:px-12 relative overflow-hidden">
+    <div className="w-full bg-black py-20 px-4 lg:px-12 relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-6 relative z-10">
-        <div className="font-bold flex justify-center text-4xl mb-16">
-          <Terminal className="mr-2 text-red-600" />
+        {/* Título da seção */}
+        <div className="font-bold flex justify-center items-center text-4xl mb-16 tracking-tight">
+          <Terminal className="mr-2 text-red-600 size-9" />
           <h1>
             Serviços
-            <span className="bg-gradient-to-r from-[#FF0000] to-pink-900 bg-clip-text text-transparent">_</span>
+            <span className="bg-gradient-to-r from-red-600 to-pink-900 bg-clip-text text-transparent">_</span>
           </h1>
         </div>
 
+        {/* Cards */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
           {services.map((service, index) => (
             <div
               key={index}
-              className="group relative bg-primary p-6 rounded-lg border-2 border-neutral-900 hover:border-red-600 transition-all duration-700"
+              className="group relative bg-gradient-to-b from-neutral-900 to-black p-6 rounded-2xl border border-neutral-800 hover:border-red-600 hover:shadow-[0_0_25px_-5px_rgba(220,38,38,0.6)] transition-all duration-700"
             >
+              {/* Efeito de luz no hover */}
               <div className="absolute inset-0 bg-gradient-to-tr from-red-600/15 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+              
               <div className="py-5">{service.icon}</div>
               <h2 className="text-xl sm:text-2xl font-bold mb-2">{service.title}</h2>
-              <p className="text-gray-600 text-sm sm:text-base">{service.description}</p>
+              <p className="text-gray-300 text-sm sm:text-base leading-relaxed">{service.description}</p>
             </div>
           ))}
         </div>

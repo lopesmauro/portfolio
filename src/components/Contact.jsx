@@ -14,7 +14,7 @@ const Contact = () => {
 
   return (
     <>
-      <section id='contact' className="w-full bg-[#131314] py-20">
+      <section id='contact' className="w-full bg-black py-20">
         <div className="max-w-7xl mx-auto px-6 lg:px-12 flex flex-col md:flex-row items-start gap-12">
 
           {/* Conteúdo do título */}

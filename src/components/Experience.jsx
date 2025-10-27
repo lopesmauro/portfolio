@@ -33,67 +33,62 @@ const experiences = [
 
 const Experience = () => {
   return (
-    <div className="w-full bg-[#131314] py-20 relative overflow-hidden">
-      {/* Fundo com grid vermelho sutil */}
-      <div className="absolute inset-0 opacity-5">
-        <div
-          className="h-full w-full"
-          style={{
-            backgroundImage:
-              'linear-gradient(90deg, rgba(255, 0, 0, 0.15) 1px, transparent 1px), linear-gradient(rgba(255, 0, 0, 0.15) 1px, transparent 1px)',
-            backgroundSize: '24px 24px',
-          }}
-        />
-      </div>
-
-      {/* Container principal alinhado com Services e Projects */}
-      <div className="max-w-7xl mx-auto px-6 relative z-10 flex flex-col md:flex-row gap-12">
-        {/* Coluna do título */}
+    <section className="w-full bg-black py-24 px-6 relative overflow-hidden">
+      <div className="max-w-7xl mx-auto flex flex-col md:flex-row gap-16 relative z-10">
+        {/* Título */}
         <div className="md:w-1/4 flex items-start">
-          <div className="font-bold flex items-center text-4xl">
-            <Terminal className="mr-2 text-red-600" />
+          <div className="flex items-center text-4xl font-extrabold text-white">
+            <Terminal className="mr-3 text-red-600" />
             <h1>
               Experiência
-              <span className="bg-gradient-to-r from-[#FF0000] to-pink-900 bg-clip-text text-transparent">_</span>
+              <span className="bg-gradient-to-r from-red-600 to-pink-900 bg-clip-text text-transparent">_</span>
             </h1>
           </div>
         </div>
 
-        {/* Coluna dos cards */}
-        <div className="md:w-3/4 space-y-8">
+        {/* Cards */}
+        <div className="md:w-3/4 space-y-10">
           {experiences.map((exp, index) => (
-            <div key={index} className="relative group">
-              <div className="bg-[#0c0c0d] p-8 rounded-2xl backdrop-blur-sm border-2 border-neutral-900 hover:border-red-600 transform transition-all duration-500 group-hover:-translate-y-1 z-10 relative">
-                <div className="absolute inset-0 bg-gradient-to-tr from-red-600/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+            <div
+              key={index}
+              className="relative bg-gradient-to-br from-neutral-950 via-neutral-900 to-neutral-950 p-[1px] rounded-2xl group"
+            >
+              <div className="relative bg-black rounded-2xl p-8 transition-all duration-500 hover:-translate-y-1 hover:shadow-[0_0_25px_-5px_rgba(220,38,38,0.4)] border border-neutral-800">
+                {/* Gradiente leve no fundo */}
+                <div className="absolute inset-0 bg-gradient-to-t from-red-600/10 to-transparent opacity-0 group-hover:opacity-100 rounded-2xl transition-opacity duration-500" />
 
-                <div className="flex flex-wrap justify-between items-start gap-4 mb-6">
+                {/* Header */}
+                <div className="flex flex-wrap justify-between items-start gap-4 mb-6 relative z-10">
                   <div>
-                    <h3 className="text-xl sm:text-2xl font-bold mb-2">{exp.title}</h3>
-                    <div className="flex items-center gap-2 text-gray-400">
+                    <h3 className="text-xl sm:text-2xl font-semibold mb-1 text-white">{exp.title}</h3>
+                    <div className="flex items-center gap-2 text-gray-400 text-sm">
                       <Building2 size={16} />
                       <span>{exp.company}</span>
                     </div>
                   </div>
-                  <div className="flex items-center gap-2 text-red-600 bg-red-600/10 border border-red-600/20 px-4 py-2 rounded-full">
+                  {/* Badge de período minimalista */}
+                  <div className="flex items-center gap-2 text-sm text-white bg-red-600 px-3 py-1 rounded-full">
                     <Calendar size={16} />
                     <span>{exp.period}</span>
                   </div>
                 </div>
 
-                <ul className="space-y-3 mb-6 text-gray-600">
-                  {exp.description.map((desc, descIndex) => (
-                    <li key={descIndex} className="flex items-start gap-2">
+                {/* Descrição */}
+                <ul className="space-y-3 mb-6 text-gray-300 relative z-10">
+                  {exp.description.map((desc, i) => (
+                    <li key={i} className="flex items-start gap-2">
                       <ChevronRight size={16} className="mt-1 text-red-600" />
                       <span>{desc}</span>
                     </li>
                   ))}
                 </ul>
 
-                <div className="flex flex-wrap gap-2">
-                  {exp.tech.map((tech, techIndex) => (
+                {/* Tecnologias minimalistas */}
+                <div className="flex flex-wrap gap-2 relative z-10">
+                  {exp.tech.map((tech, i) => (
                     <span
-                      key={techIndex}
-                      className="px-3 py-1 text-sm rounded-full bg-red-600/10 text-red-600 border border-red-600/20"
+                      key={i}
+                      className="px-3 py-1 text-sm text-white bg-red-600 rounded-full"
                     >
                       {tech}
                     </span>
@@ -104,7 +99,7 @@ const Experience = () => {
           ))}
         </div>
       </div>
-    </div>
+    </section>
   )
 }
 
