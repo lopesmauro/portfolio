@@ -100,32 +100,33 @@ function SmallTetrahedron({ position }) {
 function Scene() {
   return (
     <>
-      <ambientLight intensity={0.4} />
-      <directionalLight position={[10, 10, 5]} intensity={0.6} />
-      <directionalLight position={[-10, -10, -5]} intensity={0.3} />
+      {/* Luz ambiente e direcional simulando "studio" */}
+      <ambientLight intensity={0.6} />
+      <directionalLight position={[5, 5, 5]} intensity={0.8} />
+      <directionalLight position={[-5, -3, -5]} intensity={0.3} />
 
       {/* Formas principais */}
       <MinimalCube position={[3.5, 1.8, -1]} />
       <Diamond position={[5.2, -0.5, -2]} />
       <MinimalPyramid position={[4.0, -2.2, 0.5]} />
       <WireframeOctahedron position={[2.8, -1.3, -2.2]} />
-
-      {/* Formas adicionais no canto inferior direito */}
       <SmallTetrahedron position={[4.8, 0.8, -0.5]} />
 
+      {/* Controles e fundo preto */}
       <OrbitControls enableZoom={false} autoRotate autoRotateSpeed={0.1} />
-      <Environment preset="studio" />
+      <color attach="background" args={["#000000"]} />
     </>
   )
 }
 
+
 export const CanvaComponent = () => {
-    return (
-        <Canvas>
-          <Suspense fallback={null}>
-            <PerspectiveCamera makeDefault position={[0, 0, 5]} />
-            <Scene />
-          </Suspense>
-        </Canvas>
-    )
+  return (
+    <Canvas>
+      <Suspense fallback={null}>
+        <PerspectiveCamera makeDefault position={[0, 0, 5]} />
+        <Scene />
+      </Suspense>
+    </Canvas>
+  )
 }    
